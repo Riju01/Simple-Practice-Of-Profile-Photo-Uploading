@@ -1,0 +1,61 @@
+body{
+    background-color:rgba(64, 224, 208, 0.521);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    height: 200px;
+    width: 310px;
+}
+
+div{
+    height: 470px;
+    width: 310px;
+    border: 1px solid rgb(241, 241, 22);
+    margin: 30px auto;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px black;
+    transition: .4s;
+    background-color: rgb(201, 69, 146);
+    color: whitesmoke;
+}
+h3,p{
+    padding: 5px;
+}
+
+div:hover{
+    box-shadow: 4px 4px 10px rgb(205, 200, 50);
+    border-radius: 5px;
+}
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#check{
+    display: none;
+}
+#upload,#btnUp,hr{
+    opacity: 0;
+    transition: .1s;
+    text-decoration: none;
+}
+
+#check:checked~#btnUp{
+    opacity: 1;
+    border: 1px solid rgb(204, 13, 13);
+    height: 20px;
+    width: 55px;
+    border-radius: 3px;
+    background-color: rgb(0, 170, 255);
+    color:whitesmoke;
+    font-weight: bold;
+}
+#check:checked~#upload{
+    opacity: 1;
+    font-weight: bold;
+}
+
+#check:checked~hr{
+    opacity: 1;
+    border: 1px solid rgb(0, 170, 255);
+}
